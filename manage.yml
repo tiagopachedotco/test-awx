@@ -22,7 +22,7 @@
 
   - name: Site directory is created
     win_file:
-      path: {{ iis_site_path }}
+      path: "{{ iis_site_path }}"
       state: directory
 
   - name: Index page for site is installed
