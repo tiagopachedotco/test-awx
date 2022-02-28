@@ -5,6 +5,8 @@
       - Web-Server
       - Net-Framework-Core
       - Web-Asp-Net45
+  
+    app_path: /vars/vars-manage.yml
   tasks:
 
   - name: IIS and .Net 4.5 are installed
