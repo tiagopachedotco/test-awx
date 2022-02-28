@@ -1,0 +1,8 @@
+#defines the root directory of the IIS site
+iis_site_path: C:\sites\variables
+
+#defines the IIS site name
+iis_site_name: "D0417-variables"
+
+#defines the port of the IIS site
+iis_site_port: 8080
