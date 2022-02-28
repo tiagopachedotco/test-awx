@@ -31,7 +31,7 @@
       dest: '{{ iis_site_path }}\index.html'
 
   - name: IIS site is created
-    community.windows.win_iis_website:
+    win_iis_website:
       name: "{{ iis_site_name }}"
       state: started
       port: "{{ iis_site_port }}"
@@ -40,7 +40,7 @@
       application_pool: DefaultAppPool
       physical_path: "{{ iis_site_path }}"
       parameters: logfile.directory:C:\sites\logs
-  
+
   - name: Firewall rule is enabled
     win_firewall_rule:
       name: HTTP
