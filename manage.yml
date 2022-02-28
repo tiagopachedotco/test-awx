@@ -31,7 +31,7 @@
       dest: '{{ iis_site_path }}\index.html'
 
   - name: IIS site is created
-    win_iis_website:
+    community.windows.win_iis_website:
       name: "{{ iis_site_name }}"
       state: started
       port: "{{ iis_site_port }}"
