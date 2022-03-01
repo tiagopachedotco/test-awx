@@ -7,7 +7,7 @@
       - Web-Asp-Net45
   
   vars_files:
-    - /vars/vars-manage.yml
+    - vars/vars-manage.yml
 
   tasks:
 
